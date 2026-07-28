@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>ACCESS GRANTED</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/crt.css">
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+
+ACCESS GRANTED
+
+</h1>
+
+
+<h2>
+
+WELCOME BACK.
+
+</h2>
+
+
+<p>
+
+You shouldn't have this password.
+
+</p>
+
+
+<br>
+
+
+<p id="message">
+
+Initializing...
+
+</p>
+
+
+</div>
+
+
+<script>
+
+
+const messages = [
+
+"Connection established.",
+
+"Checking files.",
+
+"Checking memories.",
+
+"Checking reality.",
+
+"Welcome, Monarch."
+
+];
+
+
+let i = 0;
+
+
+setInterval(()=>{
+
+
+if(i < messages.length){
+
+document.getElementById("message").innerHTML =
+messages[i];
+
+i++;
+
+}
+
+
+},2000);
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
